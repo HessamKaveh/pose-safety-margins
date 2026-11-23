@@ -1,5 +1,7 @@
 # How close can a robot get? Conformal safety margins for human keypoints
 
+[![CI](https://github.com/HessamKaveh/pose-safety-margins/actions/workflows/ci.yml/badge.svg)](https://github.com/HessamKaveh/pose-safety-margins/actions/workflows/ci.yml) ![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A robot sharing a workspace with people needs more than a skeleton: it needs to know **how far from each predicted joint the real joint could be**. This study wraps a 2D human-pose estimator with **conformal prediction**, which turns every predicted joint into a safety disc with a statistical guarantee ("the true joint lies inside with probability ≥ 90 %"). It then tests where that guarantee holds, where it quietly fails, and what it costs in margin size.
 
 <p align="center"><img src="results/figures/examples.png" width="95%"></p>
@@ -125,6 +127,21 @@ src/analyze.py      repeated image-level splits, all experiments and figures
 
 ## Author
 Hessam Kaveh — Research Fellow, Italian Institute of Technology (IIT)
+
+## Citation
+
+If you use this code, please cite it (metadata in [`CITATION.cff`](CITATION.cff)):
+
+```bibtex
+@software{kaveh2026_pose_safety_margins,
+  author  = {Kaveh, Hessam},
+  title   = {How close can a robot get? Conformal safety margins for human keypoints},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/HessamKaveh/pose-safety-margins},
+  license = {MIT}
+}
+```
 
 ## License
 

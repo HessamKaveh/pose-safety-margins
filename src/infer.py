@@ -52,7 +52,7 @@ class ValPersons(Dataset):
         self.coco = COCO(os.path.join(COCO_ROOT, "annotations", "person_keypoints_val2017.json"))
         self.img_dir = os.path.join(COCO_ROOT, "val2017")
         self.corruption, self.severity = corruption, severity
-        self.items, n_in_img = [], {}
+        self.items = []
         for img_id in sorted(self.coco.getImgIds(catIds=[1])):
             info = self.coco.imgs[img_id]
             anns = [a for a in self.coco.loadAnns(self.coco.getAnnIds(imgIds=img_id, iscrowd=False))

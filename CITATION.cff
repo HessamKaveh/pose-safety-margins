@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "How close can a robot get? Conformal safety margins for human keypoints"
+authors:
+  - family-names: Kaveh
+    given-names: Hessam
+    affiliation: "Istituto Italiano di Tecnologia (IIT)"
+repository-code: "https://github.com/HessamKaveh/pose-safety-margins"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-23"
