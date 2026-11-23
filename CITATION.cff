@@ -8,5 +8,6 @@ authors:
     affiliation: "Istituto Italiano di Tecnologia (IIT)"
 repository-code: "https://github.com/HessamKaveh/pose-safety-margins"
 license: MIT
+doi: 10.5281/zenodo.24465847
 version: 1.0.0
 date-released: "2026-11-23"
